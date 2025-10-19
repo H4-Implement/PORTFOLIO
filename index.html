@@ -3,20 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <header>
+            <div class="navbar">
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Show.html">Gallery</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <!--DROPDOWN-->
+            <div class="dropdown_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Show.html">Gallery</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </div>
+        </header>
+
     <!-- DIVISION 1 -->
     <div class="div1">
         <div class="imgholder">
-            <img src="PROFESSIONAL.png" alt="Picture of Luis in a sharp charcoal-black suit.">
+            <!-- <img src="PROFESSIONAL.png" alt="Picture of Luis in a sharp charcoal-black suit."> -->
         </div>
+
         <div class="card">
             <span id="1">Hi!</span>
             <span id="2">I am</span>
             <h1>Luis Gabriel Cortez</h1>
-            <h3></h3>
+                <div class="text-box">
+                    <h1>
+                        <span class="auto-input"></span>
+                    </h1>
+                </div>
+            <script>
+                var typed = new Typed(".auto-input", {
+                    strings: ["Student.", "Front End Developer.", "Graphic Designer.", "Aspiring Digital Artist."],
+                    typeSpeed:110,
+                    backspeed:100,
+                    loop:true,
+                })
+            </script>
+            <h3>
+                
+            </h3>
         </div>
     </div>
 
