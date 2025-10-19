@@ -26,10 +26,26 @@ h1 {
     grid-area: 5 / 2 / 6 / 5; 
 }
 
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.3rem;
+}
+
+a:hover {
+    color: red;
+}
+
 /*HEADER*/
     header {
         position: relative;
-        padding: 0 2rem;
+        padding: 0;
+        width: 50%;
+        margin: auto;
     }
 
     .navbar {
@@ -50,77 +66,117 @@ h1 {
 
     .navbar .toggle_btn {
         color: #000;
-        font-size: 1.5rem;
+        float: right;
+        font-size: 2rem;
         cursor: pointer;
         display: none;
     }
 
-    .action_btn {
-        color: #000000;
-        background-color: #ffffff;
-        padding: 0.5rem 1rem;
-        border: none;
-        outline: none;
-        border-radius: 20px;
-        font-size: 0.8rem;
-        font-weight: bold;
-        cursor: pointer;
-        transition: scale 0.5 ease;
+/*RESPONSIVE NAV*/
+@media(max-width: 990px) {
+    .navbar .links, 
+    .navbar .action_btn {
+        display: none;
     }
 
-    .action_btn:hover {
-        scale: 1.05;
-        color: #000;
+    .navbar .toggle_btn {
+        display: block;
     }
 
-/*DROPDOWN*/
     .dropdown_menu {
-        display: none;
-        position: absolute;
-        right: 2rem;
-        top: 60px;
-        height: 0;
-        width: 300px;
-        background-color: rgb(3, 3, 3, 0.1);
-        border-radius: 10px;
-        backdrop-filter: blur(15px);
-        overflow: hidden;
-        transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        display: block;
     }
+}
 
-    .dropdown_menu.open {
-        height: fit-content;
-        padding: 10px;
+@media(max-width: 800px) {
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
     }
-    .dropdown_menu li {
-        padding: 0.7rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .dropdown_menu .action_btn {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
+}
 
 /* DIVISION 1 */
-/* SPAN CHANGING TITLES */
-    /* .text-box {
-        margin-top: 30vh;
-        text-align: center;
-    }
-    */
-    .text-box h1 {
-        font-family: Arial, Helvetica, sans-serif
-    }
+        .text-box h2 span {
+            color: rgb(236, 67, 45);
+            font-size: 32px;
+        }
 
-    .text-box h1 span {
-        color: rgb(211, 38, 15);
-    }
+        .div1 {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 75%;
+            margin: auto;
+        }
+
+        .div1 .card p{
+            font-size: 28px;
+        }
+
+        .div1 .card h1{
+            font-size: 56px;
+        }
+        
+        .container {
+            margin-top: 15px;
+            background-color: #272727;
+            color: white;
+            max-width: 1750px;
+            height: 700px;
+            min-height: 600px;
+            padding: 10px;
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 50px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        .imgholder{
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            width: 30%;
+            text-align: left;
+        }
+
+        img {
+            /* border-radius: 500px; */
+            position: relative;
+            clip-path: circle();
+            width: 500px;
+            height: auto;
+            overflow: hidden;
+        }
 
 /* Division 2 */
 
+    .div2 {
+        margin-top: 25px;
+        width: 75%;
+        justify-content: center;
+    }
+        .container1 {
+            color: #ffffff;
+            max-width: 1750px;
+            background-color: #272727;
+            border-radius: 25px;
+            border-style: dotted;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container1 h1, h2, h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 28px;
+        }
+
+        .container1 p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+        }
 /* DIVISION 3 */
+        
