@@ -133,6 +133,10 @@ a:hover {
         .text-box h2 span {
             color: rgb(236, 67, 45);
             font-size: 32px;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            
         }
 
         .div1 {
@@ -195,6 +199,7 @@ a:hover {
         .div1 .down-arrow {
             display: flex;
             justify-content: center;
+            margin: 75px auto;
         }
 
         .down i {
@@ -219,7 +224,7 @@ a:hover {
         .div2 .container1 {
             color: #ffffff;
             max-width: 1750px;
-            background-color: #272727;
+            background-color: #1b1b1b;
             border-radius: 25px;
             padding: 20px;
             justify-content: center;
@@ -232,6 +237,7 @@ a:hover {
             font-size: 32px;
             display: flex;
             justify-content: center;
+            color: rgb(236, 67, 45);
         }
 
         .div2 .container1 p {
@@ -242,7 +248,7 @@ a:hover {
     
 /* DIVISION 3 */
     .div3 {
-        margin: 75px auto;
+        margin: 15px auto;
         width: 75%;
     }
 
@@ -255,3 +261,26 @@ a:hover {
     .div3 .container2 {
 
     }
+
+/* DIVISION 4 */
+.div4 {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+}
+
+.div4 .contact {
+    width: 35%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.div4 .social {
+    width: 35%;
+    height: 20%;
+    margin: auto;
+    justify-content: space-between;
+}
+    .div4 .social i {
+    font-size: 32px;
+}
