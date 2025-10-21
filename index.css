@@ -153,8 +153,10 @@ a:hover {
         }
         
         .container {
-            margin-top: 15px;
-            background-color: #272727;
+            /* margin-top: 15px; */
+            margin-top: 75px;
+            /* background-color: #272727; */
+            background-image: linear-gradient(to bottom, rgb(92, 92, 92), rgb(12, 12, 12));
             color: white;
             max-width: 1750px;
             height: 700px;
@@ -165,7 +167,7 @@ a:hover {
             justify-content: space-around;
             align-items: center;
             border-radius: 50px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
         }
 
         .imgholder{
@@ -189,31 +191,67 @@ a:hover {
             overflow: hidden;
         }
 
-/* Division 2 */
+    /* DOWN ARROW */
+        .div1 .down-arrow {
+            display: flex;
+            justify-content: center;
+        }
 
+        .down i {
+        font-size: 32px;
+        color: #2c2c2c;
+        border: 2px solid #2c2c2c;
+        border-radius: 50px;
+        padding: 12px 12px;
+        }
+
+        .down i:hover {
+        background-color: #2c2c2c;
+        color: white;
+        transition: all .42s ease;
+        }
+
+/* Division 2 */
     .div2 {
-        margin-top: 25px;
+        margin: 75px auto;
         width: 75%;
-        justify-content: center;
     }
-        .container1 {
+        .div2 .container1 {
             color: #ffffff;
             max-width: 1750px;
             background-color: #272727;
             border-radius: 25px;
-            border-style: dotted;
+            padding: 20px;
             justify-content: center;
             align-items: center;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
         }
 
-        .container1 h1, h2, h3 {
+        .div2 .container1 h1 {
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 28px;
+            font-size: 32px;
+            display: flex;
+            justify-content: center;
         }
 
-        .container1 p {
+        .div2 .container1 p {
             font-family: Arial, Helvetica, sans-serif;
             font-size: large;
+            font-size: 24px;
         }
+    
 /* DIVISION 3 */
-        
+    .div3 {
+        margin: 75px auto;
+        width: 75%;
+    }
+
+    .div3 .container2 {
+        margin: 20px auto;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .div3 .container2 {
+
+    }
