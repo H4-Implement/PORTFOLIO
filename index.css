@@ -10,21 +10,11 @@ h1 {
     font-family: Arial, Helvetica, sans-serif
 }
 
-.div1 { 
-    grid-area: 1 / 2 / 2 / 5; 
-}
-
-.div2 { 
-    grid-area: 2 / 2 / 4 / 5; 
-}
-
-.div3 { 
-    grid-area: 4 / 2 / 5 / 5; 
-}
-
-.div4 { 
-    grid-area: 5 / 2 / 6 / 5; 
-}
+.div1 { grid-area: 1 / 2 / 2 / 5; }
+.div2 { grid-area: 2 / 2 / 3 / 5; }
+.div3 { grid-area: 3 / 2 / 4 / 5; }
+.div4 { grid-area: 4 / 2 / 5 / 5; }
+.div5 { grid-area: 5 / 2 / 6 / 5; }
 
 li {
     list-style: none;
@@ -41,7 +31,9 @@ a:hover {
 }
 
 body {
-    background-image: linear-gradient(to bottom, rgb(134, 134, 134), rgb(22, 22, 22));
+    /* background-image: linear-gradient(to bottom, rgb(134, 134, 134), rgb(22, 22, 22)); */
+    /* background-color: #1b1b1b; */
+    background-image: linear-gradient(to bottom, rgb(85, 85, 85), rgb(22, 22, 22), rgb(11, 17, 73));
 }
 
 /*HEADER*/
@@ -228,7 +220,8 @@ body {
         .div2 .container1 {
             color: #ffffff;
             max-width: 1750px;
-            background-color: #1b1b1b;
+            /* background-color: #1b1b1b; */
+            background-image: linear-gradient(to bottom left, rgb(68, 68, 68), rgb(19, 19, 19));
             border-radius: 25px;
             padding: 20px;
             justify-content: center;
@@ -250,59 +243,132 @@ body {
             font-size: 24px;
         }
     
-/* DIVISION 3 */
-    .div3 {
+    /* Division 3 */
+    /* SEE CAROUSEL.CSS */
+    
+/* DIVISION 4 */
+    .div4 {
         margin: 15px auto;
         width: 75%;
+        max-width: 1750;
     }
 
-    .div3 .container2 {
+    .div4 .container2 {
         margin: 20px auto;
-        display: flex;
-        justify-content: space-around;
     }
 
-    .div3 .container2 .NP {
-        color: rgb(50, 122, 231);
+    .div4 .container2 .NP {
+        color: rgb(255, 255, 255);
+        border-radius: 25px;
+        padding: 20px;
+        /* background-color: #1b1b1b; */
+        background-image: linear-gradient(to bottom right, rgb(30, 43, 165), rgb(48, 48, 48));
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    .div4 .container2 .NP .title {
+        position: absolute; 
+        z-index: 0;
+        opacity: 0.5; 
+        width: 75%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .div4 .container2 .NP .title h1{
+        position: absolute;
+        white-space: nowrap; /* Prevents wrapping */
+        z-index: 0;
+        font-size: clamp(3rem, 14vw, 18rem);
+        line-height: 0;
+        display: flex;
+        justify-content: center;
+    } 
+
+    .div4 .container2 .NP .card {
+        margin-top: 25px;
+        width: 350px;
+        padding: 10px;
+        border-radius: 10px;
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 16px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(6.3px);
+        -webkit-backdrop-filter: blur(6.3px);;
+    }
+
+    .div4 .container2 .NP .card h2, a{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: auto;
+        font-size: 24px;
+    }
+
+    .div4 .container2 .NP .card p{
+        margin-top: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .div4 .container2 .NP .card img {
+        width: 350px;
+        height: auto;
+    }
+
+    /* GRAPHIC DESIGN */
+    .div4 .container2 .NGP {
+        color: rgb(255, 255, 255);
         border-radius: 25px;
         padding: 20px;
         background-color: #1b1b1b;
     }
 
-    .div3 img{
-        /* border-radius: 500px; */
+    .div4 .container2 .NGP i{
+        color: rgb(50, 122, 231);
+        font-size: 30px;
+    }
+
+    .div4 .container2 .NGP i:hover{
+        color: rgb(255, 255, 255);
+    }
+
+    /* .div4 img{
+        border-radius: 500px;
         position: relative;
         width: 250px;
         height: auto;
         overflow: hidden;
-    }
+    } */
 
-/* DIVISION 4 */
-.div4 {
+/* DIVISION 5 */
+.div5 {
     width: 75%;
     display: flex;
     justify-content: center;
 }
 
-.div4 .contact {
+.div5 .contact {
     width: 35%;
     margin: auto;
     justify-content: space-between;
 }
 
-.div4 .social {
+.div5 .social {
     width: 35%;
     height: 20%;
     margin: auto;
     justify-content: space-between;
 }
 
-.div4 .social i {
+.div5 .social i {
     color: #ffffff;
     font-size: 32px;
 }
 
-.div4 .social i:hover {
+.div5 .social i:hover {
     color: rgb(50, 122, 231);
     font-size: 32px;
 }
