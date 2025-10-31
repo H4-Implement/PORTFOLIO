@@ -12,7 +12,7 @@
 .div3 {
     display: flex;
     width: 75%;
-    margin: 75px auto; 
+    margin: 100px auto; 
     padding: 20px 0; /* Add some vertical space for clarity */
     background-image: linear-gradient(to left, rgb(56, 56, 56), rgb(12, 12, 12));
     border-radius: 25px;

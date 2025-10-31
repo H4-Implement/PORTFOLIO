@@ -250,25 +250,35 @@ body {
     .div4 {
         margin: 15px auto;
         width: 75%;
-        max-width: 1750;
+        max-width: 1750px;
     }
 
     .div4 .container2 {
         margin: 20px auto;
     }
 
-    .div4 .container2 .NP {
-        color: rgb(255, 255, 255);
-        border-radius: 25px;
-        padding: 20px;
-        /* background-color: #1b1b1b; */
-        background-image: linear-gradient(to bottom right, rgb(30, 43, 165), rgb(48, 48, 48));
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
+    .div4 .container2 .title {
+        position: absolute; 
+        z-index: 0;
+        opacity: 0.5; 
+        width: 75%;
+        display: flex;
+        justify-content: center;
     }
 
-    .div4 .container2 .NP .title {
+    .div4 .container2 .title h1{
+        position: absolute;
+        white-space: nowrap;
+        z-index: -1;
+        font-size: clamp(3rem, 25vw, 35rem);
+        color: #ffffff;
+        opacity: 1;
+        line-height: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* .div4 .container2 .NP .title {
         position: absolute; 
         z-index: 0;
         opacity: 0.5; 
@@ -279,25 +289,55 @@ body {
 
     .div4 .container2 .NP .title h1{
         position: absolute;
-        white-space: nowrap; /* Prevents wrapping */
+        white-space: nowrap;
         z-index: 0;
         font-size: clamp(3rem, 14vw, 18rem);
         line-height: 0;
         display: flex;
         justify-content: center;
-    } 
+    } */
+
+    .div4 .container2 .NP {
+        color: rgb(255, 255, 255);
+        border-radius: 25px;
+        padding: 20px;
+        /* background-color: #1b1b1b; */
+        /* background-image: linear-gradient(to bottom right, rgb(30, 43, 165), rgb(48, 48, 48)); */
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+        position: relative;
+        gap: 20px;
+    }
 
     .div4 .container2 .NP .card {
         margin-top: 25px;
         width: 350px;
-        padding: 10px;
+        padding: 25px;
         border-radius: 10px;
         /* From https://css.glass */
         background: rgba(255, 255, 255, 0.08);
         border-radius: 16px;
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
-        backdrop-filter: blur(6.3px);
-        -webkit-backdrop-filter: blur(6.3px);;
+        backdrop-filter: blur(25.5px);
+        -webkit-backdrop-filter: blur(25.5px);;
+    }
+
+    .div4 .container2 .NP .card .button{
+        display: flex;
+        justify-content: center;
+    }
+
+    .div4 .container2 .NP .card .text {
+        display: block;
+        justify-items: center;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .div4 .container2 .NP .card img {
+        width: 350px;
+        object-fit: cover;
+        height: auto;
     }
 
     .div4 .container2 .NP .card h2, a{
@@ -313,17 +353,17 @@ body {
         margin-bottom: 5px;
     }
 
-    .div4 .container2 .NP .card img {
-        width: 350px;
-        height: auto;
-    }
+    .div4 .container2 .NP .card .text p {
+    margin-bottom: 10px; /* Adds space below each line of text */
+    line-height: 1.5;    /* Improves readability */
+}
 
     /* GRAPHIC DESIGN */
     .div4 .container2 .NGP {
         color: rgb(255, 255, 255);
         border-radius: 25px;
         padding: 20px;
-        background-color: #1b1b1b;
+        /* background-color: #1b1b1b; */
     }
 
     .div4 .container2 .NGP i{
@@ -350,25 +390,25 @@ body {
     justify-content: center;
 }
 
-.div5 .contact {
+.div5 .container3 .contact {
     width: 35%;
     margin: auto;
     justify-content: space-between;
 }
 
-.div5 .social {
+.div5 .container3 .social {
     width: 35%;
     height: 20%;
     margin: auto;
     justify-content: space-between;
 }
 
-.div5 .social i {
+.div5 .container3 .social i {
     color: #ffffff;
     font-size: 32px;
 }
 
-.div5 .social i:hover {
+.div5 .container3 .social i:hover {
     color: rgb(50, 122, 231);
     font-size: 32px;
 }
