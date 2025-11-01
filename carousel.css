@@ -52,7 +52,7 @@
 .carousel-track .card {
     /* Set a fixed width for each card. This is crucial for the animation math to work. */
     /* Total original cards: 17. 100% / 17 cards ≈ 5.88% */
-    width: calc(100% / 19); /* Set each card's width relative to the original set (50% of track width) */
+    width: calc(100% / 20); /* Set each card's width relative to the original set (50% of track width) */
     flex-shrink: 0; /* Prevents cards from shrinking */
     display: flex;
     justify-content: center;
