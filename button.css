@@ -1,4 +1,4 @@
-/* 1. STYLED BUTTON (replaces the old 'button' selector) */
+/* BUTTON CSS NOT MINE - H4 */
 /* Apply base styles and variables to the anchor tag (.styled-button) */
 .styled-button {
   /* Variables */
@@ -36,7 +36,7 @@
 /* 3. INTERACTIONS (Using .styled-button:hover instead of button:hover) */
 .styled-button:hover .button_top {
   /* Pull the button upwards when hovered */
-  transform: translateY(-0.33em);
+  transform: translateY(-0.44em);
 }
 
 .styled-button:active .button_top {
