@@ -13,7 +13,7 @@
     display: flex;
     width: 75%;
     margin: 20px auto; 
-    padding: 20px 0; /* Add some vertical space for clarity */
+    padding: 10px 0; /* Add some vertical space for clarity */
     background-image: linear-gradient(to left, rgb(56, 56, 56), rgb(12, 12, 12));
     border-radius: 25px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);

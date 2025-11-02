@@ -85,15 +85,27 @@
 #expo {
     background: rgba(29, 29, 29, 0.2);
 }
+#hostinger {
+    background: rgba(207, 0, 0, 0.522);
+}
 
 /* design */
 
     .tools {
         justify-content: center;
+        margin: -5px auto;
+        margin-bottom: 15px;
+    }
+
+    .tool-tag {
+        margin: -15px auto;
+        display: block;
+        justify-content: center;
     }
 
     .tool-tags {
-        margin: 2px auto;
+        font-family: "Ubuntu", sans-serif;;
+        margin: 3px auto;
         display: inline-block;
         gap: 2rem;
         padding: 0.5rem 1rem;
