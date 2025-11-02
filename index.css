@@ -7,7 +7,8 @@ grid-row-gap: 0px;
 }
 
 h1 {
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: default;
 }
 
 .div1 { grid-area: 1 / 2 / 2 / 5; }
@@ -44,6 +45,7 @@ body {
             font-family: "Ubuntu", sans-serif;
             font-weight: 400;
             font-style: normal;
+            cursor: default;
         }
 
         .div1 {
@@ -57,11 +59,13 @@ body {
             font-family: "Ubuntu", sans-serif;
             font-weight: 400;
             font-style: normal;
+            cursor: default;
         }
 
         .div1 .card h1{
             /* font-size: 56px; */
             font-size: clamp(2.5rem, 42px, 56px);
+            cursor: default;
         }
         
         .container {
@@ -91,7 +95,7 @@ body {
 
         .card {
             width: 45%;
-            text-align: left;
+            /* text-align: left; */
         }
 
         .div1 img {
@@ -128,6 +132,8 @@ body {
     .div2 {
         margin: 75px auto;
         width: 75%;
+        display: flex;
+        justify-content: center;
     }
         .div2 .container1 {
             color: #ffffff;
@@ -142,7 +148,6 @@ body {
         }
 
         .div2 .container1 h1 {
-            font-family: Arial, Helvetica, sans-serif;
             font-size: 32px;
             display: flex;
             justify-content: center;
@@ -157,6 +162,30 @@ body {
     
     /* Division 3 */
     /* SEE CAROUSEL.CSS */
+
+    /* TITLE DECOR BEFORE DIVISON 4 */
+    .title {
+        position: absolute; 
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        z-index: 0;
+        opacity: 0.5; 
+        /* display: flex;
+        justify-content: center; */
+    }
+
+    .title .text {
+        margin: 15rem auto;
+    }
+
+    .title .text h1 {
+        /* white-space: nowrap; */
+        z-index: -1;
+        font-size: clamp(5rem, 25vw, 35rem);
+        color: #ffffff;
+        opacity: 1;
+    }
     
 /* DIVISION 4 */
     .div4 {
@@ -167,27 +196,6 @@ body {
 
     .div4 .container2 {
         margin: 20px auto;
-    }
-
-    .div4 .container2 .title {
-        position: absolute; 
-        z-index: 0;
-        opacity: 0.5; 
-        width: 75%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .div4 .container2 .title h1{
-        position: relative;
-        white-space: nowrap;
-        z-index: -1;
-        font-size: clamp(3rem, 24vw, 33rem);
-        color: #ffffff;
-        opacity: 1;
-        line-height: 1;
-        display: flex;
-        justify-content: center;
     }
 
     /* .div4 .container2 .NP .title {
@@ -267,8 +275,8 @@ body {
     }
 
     .div4 .container2 .NP .card .text p {
-    line-height: 1.3;    /* Improves readability */
-}
+        line-height: 1.3;    /* Improves readability */
+    }
 
 /* DIVISION 5 */
 .div5 {
